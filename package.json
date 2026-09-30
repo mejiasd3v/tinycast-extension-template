@@ -1,0 +1,30 @@
+{
+  "name": "tinycast-extension-template",
+  "version": "1.0.0",
+  "title": "Extension Template",
+  "description": "A starting point for custom Tinycast extensions",
+  "author": "Your Name",
+  "license": "MIT",
+  "icon": "extension-icon.png",
+  "platforms": ["macOS"],
+  "scripts": {
+    "build": "node scripts/check.cjs",
+    "check": "node scripts/check.cjs",
+    "test": "node --test test/*.test.cjs",
+    "update": "node scripts/update.cjs"
+  },
+  "commands": [
+    {
+      "name": "search-items",
+      "title": "Search Example Items",
+      "description": "Search resources, view details, and open or copy a URL",
+      "mode": "view"
+    },
+    {
+      "name": "copy-example",
+      "title": "Copy Example Text",
+      "description": "Copy a sample value without opening a view",
+      "mode": "no-view"
+    }
+  ]
+}
